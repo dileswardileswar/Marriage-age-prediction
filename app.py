@@ -7,7 +7,7 @@ app.config["DEBUG"] = True
 # main index page route
 @app.route('/')
 def home():
-    return '<h1>API is working.. </h1>'
+    return render_template('index.html')
 
 
 @app.route('/predict',methods=['GET'])
