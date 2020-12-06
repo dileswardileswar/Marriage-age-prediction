@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, render_template
 
 
 app = flask.Flask(__name__)
-model = pickle.load(open(r'F:\8.End_to_End_Project\2.Marriage Age Prediction\My COde\marriage_age_predict_model.pkl','rb'))
+model = pickle.load(open('marriage_age_predict_model.pkl','rb'))
 app.config["DEBUG"] = True
 
 
