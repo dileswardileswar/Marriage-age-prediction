@@ -10,7 +10,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/predict',methods=['GET'])
+@app.route('/predict',methods=['POST'])
 def predict():
     from sklearn.externals import joblib
     model = joblib.load('marriage_age_predict_model.ml')
